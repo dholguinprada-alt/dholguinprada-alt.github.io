@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Atomic Estudio",
+  "image": "https://atomicestudio.co/atomic_studio_logo_transparent.png",
+  "url": "https://atomicestudio.co/",
+  "telephone": "+57 313 822 6027",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Funza",
+    "addressRegion": "Cundinamarca",
+    "addressCountry": "CO"
+  },
+  "areaServed": ["Funza", "Madrid", "Mosquera"],
+  "sameAs": [
+    "https://www.instagram.com/atomicstu_/"
+  ]
+}
+</script>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atomic Estudio | Estudio Webcam en Funza</title>
+  <meta name="description" content="Atomic Estudio es un estudio webcam en Funza para mujeres mayores de 18 años. Ambiente exclusivo, discreto y altos ingresos." />
+
+  <!-- SEO LOCAL (DISCRETO) -->
+  <meta name="geo.region" content="CO-CUN" />
+  <meta name="geo.placename" content="Funza, Cundinamarca" />
+  <meta name="keywords" content="estudio webcam Funza, estudio webcam Madrid Cundinamarca, estudio webcam Mosquera, modelos webcam Funza" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Atomic Estudio | Estudio Webcam en Funza" />
+  <meta property="og:description" content="Estudio webcam exclusivo y profesional para mujeres. Seguridad, privacidad e ingresos reales." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --primary:#ff4fd8;
+  --secondary:#ff1fa8;
+  --accent:#ff9bd5;
+  --dark:#08080f;
+  --light:#ffffff;
+  --gray:#d6d6ef;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:radial-gradient(1200px 600px at 50% -10%, rgba(255,155,213,.08), transparent 60%), #08080f;
+  color:var(--light);
+  line-height:1.6;
+  overflow-x:hidden;
+}
+
+header{
+  min-height:100vh;
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:2rem;
+}
+
+.hero-video{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  filter:brightness(.55) contrast(1.1) saturate(1.25) blur(1px);
+}
+
+header::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg, rgba(8,8,15,.35), rgba(8,8,15,.85));
+  z-index:1;
+}
+
+.hero{
+  position:relative;
+  z-index:2;
+  max-width:820px;
+}
+
+.logo{
+  width:190px;
+  margin-bottom:1.4rem;
+}
+
+.location,.filter{
+  color:var(--gray);
+  font-size:.95rem;
+}
+
+h1{
+  font-size:3.2rem;
+  font-weight:700;
+  margin:1rem 0;
+}
+
+h1 span{color:var(--primary)}
+
+.hero p{
+  color:var(--gray);
+  margin-bottom:2.2rem;
+}
+
+.btn{
+  display:inline-block;
+  padding:1.05rem 2.6rem;
+  border-radius:60px;
+  background:linear-gradient(135deg,var(--primary),var(--secondary));
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+  box-shadow:0 10px 35px rgba(255,59,141,.35);
+}
+
+section{padding:5rem 2rem;max-width:1100px;margin:auto}
+
+section h2{text-align:center;font-size:2.35rem;margin-bottom:3rem}
+
+.features{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:2rem;
+}
+
+.card{
+  background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+  border-radius:26px;
+  padding:2.6rem 2rem;
+  text-align:center;
+}
+
+.card h3{color:var(--primary);margin-bottom:1rem}
+.card p{color:var(--gray)}
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:1.6rem;
+}
+
+.gallery img{
+  width:100%;
+  border-radius:22px;
+}
+
+.contact{
+  background:linear-gradient(135deg,rgba(255,59,141,.18),rgba(199,125,255,.12));
+  border-radius:38px;
+  padding:4rem 2rem;
+  text-align:center;
+}
+
+.floating-whatsapp{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  z-index:50;
+}
+
+.floating-whatsapp a{
+  display:flex;
+  width:62px;
+  height:62px;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  background:linear-gradient(135deg,var(--primary),var(--secondary));
+  color:#fff;
+  text-decoration:none;
+  font-size:1.4rem;
+}/* BOTONES FLOTANTES REDES SOCIALES (horizontal abajo izquierda) */
+.social-links-horizontal {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  display: flex;
+  gap: 12px;
+  z-index: 50;
+}
+
+.social-links-horizontal a img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.social-links-horizontal a:hover img {
+  transform: scale(1.1);
+}
+
+
+footer{
+  text-align:center;
+  padding:2rem;
+  font-size:.85rem;
+  color:#777;
+}
+
+@media(max-width:600px){
+  h1{font-size:2.3rem}
+  .logo{width:150px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <video class="hero-video" autoplay muted loop playsinline>
+    <source src="https://cdn.coverr.co/videos/coverr-woman-in-neon-light-9585/1080p.mp4" type="video/mp4">
+  </video>
+
+  <div class="hero">
+    <img src="atomic_studio_logo_transparent.png" alt="Atomic Estudio Funza" class="logo">
+    <p class="location">📍 Funza, Cundinamarca</p>
+    <p class="filter">Solo mujeres · +18 · Estudio presencial</p>
+
+    <h1>Deseo. Control.<br><span>Poder femenino</span></h1>
+    <p>
+      Un estudio webcam exclusivo y provocador en Funza donde tu sensualidad se transforma en
+      control, ingresos reales y libertad financiera, dentro de un ambiente seguro, discreto y profesional.
+    </p>
+
+    <a class="btn" href="https://wa.me/573138226027?text=Hola%2C%20vi%20la%20informaci%C3%B3n%20de%20Atomic%20Estudio%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20detalles%20sobre%20el%20proceso%20de%20ingreso.%20Estoy%20ubicada%20en%20Funza%20o%20alrededores.%20Gracias." target="_blank">
+      Postúlate por WhatsApp
+    </a>
+  </div>
+</header>
+
+<section>
+  <h2>¿Por qué Atomic Estudio?</h2>
+  <div class="features">
+    <div class="card">
+      <h3>Discreción Total</h3>
+      <p>Tu privacidad es nuestra prioridad. Trabajamos con absoluta confidencialidad para que te sientas segura, respetada y en control en todo momento.</p>
+    </div>
+    <div class="card">
+      <h3>Ingresos Reales</h3>
+      <p>Recibes acompañamiento constante y estrategias personalizadas enfocadas en maximizar tus ingresos de forma clara y sostenible.</p>
+    </div>
+    <div class="card">
+      <h3>Estilo & Presencia</h3>
+      <p>Te ayudamos a potenciar tu imagen, seguridad frente a cámara y presencia digital para que destaques y crezcas como modelo.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="gallery">
+    <img src="Foto 3.jpeg" alt="Modelo Atomic Estudio">
+    <img src="Foto 2.jpeg" alt="Modelo webcam en estudio profesional">
+    <img src="Foto 1.jpeg" alt="Instalaciones Atomic Estudio">
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="contact">
+    <h2>Da el primer paso</h2>
+    <p>Contáctanos de forma confidencial y descubre cómo formar parte de Atomic Estudio.</p>
+
+    <!-- TEXTO SEO DISCRETO (NO VISIBLE) -->
+    <span style="display:none">
+      Atomic Estudio es un estudio webcam ubicado en Funza, Cundinamarca, que recibe modelos de municipios cercanos como Madrid y Mosquera. Estudio presencial para mujeres mayores de edad.
+    </span>
+    
+  </div>
+</section>
+
+<div class="floating-whatsapp">
+  <a href="https://wa.me/573138226027?text=Hola%2C%20vi%20la%20informaci%C3%B3n%20de%20Atomic%20Estudio%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20detalles%20sobre%20el%20proceso%20de%20ingreso.%20Estoy%20ubicada%20en%20Funza%20o%20alrededores.%20Gracias." target="_blank">💬</a>
+</div>
+<!-- BOTÓN FLOTANTE WHATSAPP -->
+<div class="floating-whatsapp">
+  <a href="https://wa.me/573138226027?text=Hola%2C%20vi%20la%20informaci%C3%B3n%20de%20Atomic%20Estudio%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20detalles%20sobre%20el%20proceso%20de%20ingreso.%20Estoy%20ubicada%20en%20Funza%20o%20alrededores.%20Gracias." target="_blank">💬</a>
+</div>
+
+
+
+
+
+
+
+<footer>© 2025 Atomic Estudio · Todos los derechos reservados</footer>
+<!-- BOTONES FLOTANTES REDES SOCIALES -->
+<div class="social-links-horizontal">
+  <a href="https://www.instagram.com/atomicstu_/" target="_blank">
+    <img src="instagram_logo.webp" alt="Instagram" width="40" height="40">
+  </a>
+  <a href="https://www.facebook.com/profile.php?id=61585965113520" target="_blank">
+    <img src="facebook_logo.jpg" alt="Instagram" width="40" height="40"> 
+  </a>
+  <a href="https://www.tiktok.com/@atomic.estudio?_r=1&_t=ZS-92Zlh5kd8VN" target="_blank">
+    <img src="tiktok_logo.jpg" alt="TikTok" width="40" height="40">
+  </a>
+</div>
+
+
+</body>
+</html>
